@@ -1,10 +1,22 @@
 # Visual_attention_tf
+[![GitHub license](https://img.shields.io/github/license/vinayak19th/Visual_attention_tf?style=for-the-badge)](https://github.com/vinayak19th/Visual_attention_tf/blob/main/LICENSE)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/visual-attention-tf?style=for-the-badge)
+![PyPI](https://img.shields.io/pypi/v/visual-attention-tf?color=%238c49e4&style=for-the-badge)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/visual-attention-tf?style=for-the-badge)
+
+
 A set of image attention layers implemented as custom keras layers that can be imported dirctly into keras
 
 
 ## Currently Implemented layers:
 * Pixel Attention : [Efficient Image Super-Resolution Using Pixel Attention(Hengyuan Zhao et al)](https://arxiv.org/abs/2010.01073)
 * Channel Attention : [CBAM: Convolutional Block Attention Module(Sanghyun Woo et al)](https://arxiv.org/abs/1807.06521)
+
+## Installation
+You can see the projects official pypi page : https://pypi.org/project/visual-attention-tf/
+```bash
+pip install visual-attention-tf
+```
 
 # Usage:
 
