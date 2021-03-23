@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.keras.layers import Conv2D, AveragePooling2D
+from tensorflow.keras.layers import Conv2D, GlobalAveragePooling2D
 
 class ChannelAttention2D(tf.keras.layers.Layer):
   """Implements Channel Attention ( Sanghyun Woo et al) for convolutional networks in tensorflow
@@ -34,10 +34,13 @@ class ChannelAttention2D(tf.keras.layers.Layer):
     self.nf = nf
     self.conv1 = Conv2D(filters=nf/r ,kernel_size=1,use_bias=True)
     self.conv2 = Conv2D(filters=nf ,kernel_size=1,use_bias=True)
+    self.pool = GlobalAveragePooling2D()
 
   @tf.function
   def call(self,x):
-    y = AveragePooling2D(x.shape[1:-1])(x)
+    y = self.pool(x)
+    y = tf.expand_dims(y,1)
+    y = tf.expand_dims(y,1)
     y = self.conv1(y)
     y = tf.nn.relu(y)
     y = self.conv2(y)

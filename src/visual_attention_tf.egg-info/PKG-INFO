@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: visual-attention-tf
-Version: 1.0.4
+Version: 1.1.0
 Summary: CNN Attention layer to be used with tf or tf.keras 
 Home-page: https://github.com/vinayak19th/Visual_attention_tf
 Author: Vinayak Sharma
@@ -26,7 +26,7 @@ Description: # Visual_attention_tf
         ```bash
         pip install visual-attention-tf
         ```
-        
+        > Use --no-dependencies if you have tensorflow-gpu installed already
         # Usage:
         
         ```python
