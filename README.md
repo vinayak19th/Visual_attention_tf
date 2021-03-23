@@ -9,6 +9,6 @@ A set of image attention layers implemented as custom keras layers that can be i
 # Usage:
 ```python
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Input, Conv2D, Conv2DTranspose, SeparableConv2D, Concatenate, Multiply, Add
+from tensorflow.keras.layers import Input, Conv2D
 from 
 ```

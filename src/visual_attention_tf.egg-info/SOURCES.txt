@@ -7,5 +7,4 @@ src/visual_attention/pixel_attention.py
 src/visual_attention_tf.egg-info/PKG-INFO
 src/visual_attention_tf.egg-info/SOURCES.txt
 src/visual_attention_tf.egg-info/dependency_links.txt
-src/visual_attention_tf.egg-info/requires.txt
 src/visual_attention_tf.egg-info/top_level.txt

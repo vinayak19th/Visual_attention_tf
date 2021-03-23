@@ -18,7 +18,7 @@ Description: # Visual_attention_tf
         # Usage:
         ```python
         from tensorflow.keras.models import Model
-        from tensorflow.keras.layers import Input, Conv2D, Conv2DTranspose, SeparableConv2D, Concatenate, Multiply, Add
+        from tensorflow.keras.layers import Input, Conv2D
         from 
         ```
 Platform: UNKNOWN
