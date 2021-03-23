@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="visual-attention-tf", # Replace with your own username
-    version="1.0.1",
+    version="1.0.3",
     author="Vinayak Sharma",
     author_email="vinayak19th@gmail.com",
     description="CNN Attention layer to be used with tf or tf.keras ",
@@ -23,5 +23,6 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
+    install_requires = ["tensorflow>=2.2.0"],
     license='MIT',
 )
