@@ -17,7 +17,7 @@ You can see the projects official pypi page : https://pypi.org/project/visual-at
 ```bash
 pip install visual-attention-tf
 ```
-
+> Use --no-dependencies if you have tensorflow-gpu installed already
 # Usage:
 
 ```python
