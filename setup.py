@@ -1,28 +1,28 @@
-import pathlib
-from setuptools import setup
+import setuptools
 
-# The directory containing this file
-HERE = pathlib.Path(__file__).parent
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
 
-# The text of the README file
-README = (HERE / "README.md").read_text()
-
-# This call to setup() does all the work
-setup(
-    name="visual-attention-tf",
-    version="1.0.0",
-    description="CNN Attention layer to be used with tf or tf.keras",
-    long_description=README,
+setuptools.setup(
+    name="visual-attention-tf", # Replace with your own username
+    version="1.0.1",
+    author="Vinayak Sharma",
+    author_email="vinayak19th@gmail.com",
+    description="CNN Attention layer to be used with tf or tf.keras ",
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/vinayak19th/Visual_attention_tf",
-    author="Vinayak Sharma",
-    license="MIT",
+    project_urls={
+        "Bug Tracker": "https://github.com/vinayak19th/Visual_attention_tf/issues",
+    },
     classifiers=[
-        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.5",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
     ],
-    packages=["visual-attention-tf"],
-    include_package_data=True,
-    install_requires=["tensorflow"]
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
+    python_requires=">=3.6",
+    install_requires = ["tensorflow"],
+    license='MIT',
 )
