@@ -11,6 +11,7 @@ A set of image attention layers implemented as custom keras layers that can be i
 ## Currently Implemented layers:
 * Pixel Attention : [Efficient Image Super-Resolution Using Pixel Attention(Hengyuan Zhao et al)](https://arxiv.org/abs/2010.01073)
 * Channel Attention : [CBAM: Convolutional Block Attention Module(Sanghyun Woo et al)](https://arxiv.org/abs/1807.06521)
+* Efficient Channel Attention : [ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks](https://arxiv.org/abs/1910.03151)
 
 ## Installation
 You can see the projects official pypi page : https://pypi.org/project/visual-attention-tf/
