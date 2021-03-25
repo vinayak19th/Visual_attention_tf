@@ -1,2 +1,2 @@
 from visual_attention.pixel_attention import PixelAttention2D
-from visual_attention.channel_attention import ChannelAttention2D
+from visual_attention.channel_attention import ChannelAttention2D, EfficientChannelAttention2D

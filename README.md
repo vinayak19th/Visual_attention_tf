@@ -24,7 +24,7 @@ pip install visual-attention-tf
 ```python
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Conv2D
-from visual_attention import PixelAttention2D , ChannelAttention2D
+from visual_attention import PixelAttention2D , ChannelAttention2D,EfficientChannelAttention2D
 
 inp = Input(shape=(1920,1080,3))
 cnn_layer = Conv2D(32,3,,activation='relu', padding='same')(inp)
@@ -32,4 +32,5 @@ cnn_layer = Conv2D(32,3,,activation='relu', padding='same')(inp)
 # Using the .shape[-1] to simplify network modifications. Can directly input number of channels as well
 Pixel_attention_cnn = PixelAttention2D(cnn_layer.shape[-1])(cnn_layer)
 Channel_attention_cnn = ChannelAttention2D(cnn_layer.shape[-1])(cnn_layer)
+EfficientChannelAttention_cnn = EfficientChannelAttention2D(cnn_layer.shape[-1])(cnn_layer)
 ```
